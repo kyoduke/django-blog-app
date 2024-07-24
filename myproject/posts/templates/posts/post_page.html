@@ -7,7 +7,7 @@
     <img src="{{ post.banner.url }}" alt="{{ post.title }}" />
     <h1>{{ post.title }}</h1>
     <p>{{ post.date }} by {{ post.author }}</p>
-    <p>{{ post.body }}</p>
+    <p>{{ post.body | linebreaks }}</p>
 </section>
 
 {% endblock content %}
